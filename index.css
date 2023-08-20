@@ -422,8 +422,8 @@ a.head-links:hover{
 }
 .show{
     opacity: 1;
-    /* transition: 1s ease-in;
-    animation: show 2s 1 normal forwards; */
+    transition: 1s ease-in;
+    animation: show 2s 1 normal forwards;
 }
 
 @keyframes show{
