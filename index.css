@@ -35,6 +35,11 @@ body{
     background: #746ff8;
     z-index: -1;
 }
+@media screen and (max-width:900px) {
+    .circle{
+        display: none;
+    }
+}
 .arrow{
     z-index: 10001;
     top:80%;
@@ -151,7 +156,7 @@ a.head-links:hover{
 }
 
 .intro-image img{
-    height: 400px;
+    max-width: 500px;
     border-radius: 50%;
 }
 .intro-heading h1{
@@ -230,7 +235,7 @@ a.head-links:hover{
 
     
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1200px) {
     .about-me-upper{
         flex-direction: column;
     }
