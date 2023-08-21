@@ -1,7 +1,23 @@
-// header
+const circle=document.querySelector('.circle');
 const navlinks=document.querySelector('.portfolio-header-tags');
+const headlinks=document.querySelectorAll('.head-links');
 const menuicon=document.getElementById("menu-icon");
 
+window.addEventListener('mousemove',(e)=>{
+    circle.style.top=e.pageY+"px";
+    circle.style.left=e.pageX+"px";
+    
+})
+
+headlinks.forEach(link=>{
+    link.addEventListener('mouseleave',()=>{
+        circle.classList.remove('link-grow');
+    });
+    link.addEventListener('mouseover',()=>{
+        circle.classList.add('link-grow');
+    });
+});
+// header
 menuicon.addEventListener("click",()=>{
     menuicon.classList.toggle('close');
     navlinks.classList.toggle('open');
