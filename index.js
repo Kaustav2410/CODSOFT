@@ -22,7 +22,7 @@ menuicon.addEventListener("click",()=>{
     menuicon.classList.toggle('close');
     navlinks.classList.toggle('open');
 })
-// 
+// arrow function
 const arrow=document.querySelector('.arrow');
 window.onscroll=()=>{
     if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
