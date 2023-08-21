@@ -45,6 +45,7 @@ const typeEffect=()=>{
 }
 typeEffect();
 
+
 const observer=new IntersectionObserver((entires)=>{
     entires.forEach((entry)=> {
     
